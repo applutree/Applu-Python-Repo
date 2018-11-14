@@ -1,0 +1,33 @@
+digraph Tree {
+node [shape=box, style="filled, rounded", color="black", fontname=helvetica] ;
+edge [fontname=helvetica] ;
+0 [label="SMS_received <= 0.5\ngini = 0.322\nsamples = 77368\nvalue = [61781, 15587]\nclass = No", fillcolor="#e58139bf"] ;
+1 [label="ScheduledDay_hour <= 9.5\ngini = 0.279\nsamples = 52501\nvalue = [43711, 8790]\nclass = No", fillcolor="#e58139cc"] ;
+0 -> 1 [labeldistance=2.5, labelangle=45, headlabel="True"] ;
+2 [label="Age <= 3.5\ngini = 0.244\nsamples = 24212\nvalue = [20775, 3437]\nclass = No", fillcolor="#e58139d5"] ;
+1 -> 2 ;
+3 [label="gini = 0.164\nsamples = 2395\nvalue = [2179, 216]\nclass = No", fillcolor="#e58139e6"] ;
+2 -> 3 ;
+4 [label="gini = 0.252\nsamples = 21817\nvalue = [18596, 3221]\nclass = No", fillcolor="#e58139d3"] ;
+2 -> 4 ;
+5 [label="Age <= 43.5\ngini = 0.307\nsamples = 28289\nvalue = [22936, 5353]\nclass = No", fillcolor="#e58139c3"] ;
+1 -> 5 ;
+6 [label="gini = 0.332\nsamples = 16300\nvalue = [12869, 3431]\nclass = No", fillcolor="#e58139bb"] ;
+5 -> 6 ;
+7 [label="gini = 0.269\nsamples = 11989\nvalue = [10067, 1922]\nclass = No", fillcolor="#e58139ce"] ;
+5 -> 7 ;
+8 [label="Age <= 44.5\ngini = 0.397\nsamples = 24867\nvalue = [18070, 6797]\nclass = No", fillcolor="#e581399f"] ;
+0 -> 8 [labeldistance=2.5, labelangle=-45, headlabel="False"] ;
+9 [label="ScheduledDay_hour <= 7.5\ngini = 0.433\nsamples = 14830\nvalue = [10139, 4691]\nclass = No", fillcolor="#e5813989"] ;
+8 -> 9 ;
+10 [label="gini = 0.382\nsamples = 2228\nvalue = [1655, 573]\nclass = No", fillcolor="#e58139a7"] ;
+9 -> 10 ;
+11 [label="gini = 0.44\nsamples = 12602\nvalue = [8484, 4118]\nclass = No", fillcolor="#e5813983"] ;
+9 -> 11 ;
+12 [label="ScheduledDay_hour <= 8.5\ngini = 0.332\nsamples = 10037\nvalue = [7931, 2106]\nclass = No", fillcolor="#e58139bb"] ;
+8 -> 12 ;
+13 [label="gini = 0.301\nsamples = 3265\nvalue = [2662, 603]\nclass = No", fillcolor="#e58139c5"] ;
+12 -> 13 ;
+14 [label="gini = 0.345\nsamples = 6772\nvalue = [5269, 1503]\nclass = No", fillcolor="#e58139b6"] ;
+12 -> 14 ;
+}
